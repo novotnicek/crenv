@@ -43,7 +43,7 @@ func main() {
 		}
 
 		fmt.Printf("Key: %s, Value: %s\n", key, env)
-		fmt.Fprintf(file, "%s=%s\n", key, env)
+		fmt.Fprintf(file, "%s=\"%s\"\n", key, env)
 	}
 
 	fmt.Println("====================================")
